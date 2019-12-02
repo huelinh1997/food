@@ -1,0 +1,12 @@
+.headerDetail {
+  background-image: url(../img/new3.jpg);
+  background-size: cover;
+  height: 220px;
+  position: relative;
+}
+
+@media only all and (max-width: 575px) {
+  .headerDetail {
+    height: 21vw;
+  }
+}

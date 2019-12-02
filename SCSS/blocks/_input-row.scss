@@ -1,0 +1,76 @@
+.input-row {
+  position: relative;
+  width: 100%;
+  &__width1 {
+    width: 38.2%;
+  }
+  &__width2 {
+    width: 59.2%;
+  }
+  &__field {
+    color: $yellow-dark;
+    @include text(2.3vw, 3vw);
+    padding: 2vw 21.8vw 2vw 2.8vw;
+    height: 7.3vw;
+    border-radius: 7.4vw;
+    box-shadow: 0 0.7vw 1.4vw 0 rgba(0, 0, 0, 0.16);
+    border: none;
+    margin-bottom: 5vw;
+    &--shipper {
+      height: 5.8vw;
+      width: 100%;
+      padding: 1.5vw 4.5vw 1.5vw 2.5vw
+    }
+  }
+  &__field:focus {
+    color: $yellow-dark;
+  }
+  &__field::placeholder {
+    color: $yellow-dark;
+    font-style: italic;
+  }
+  &__label {
+  @include text(2.7vw, 3vw);
+    color: $yellow-dark;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 7.4vw 7.4vw 5vw;
+    box-shadow: 0 0.7vw 1.4vw 0 rgba(0, 0, 0, 0.16);
+    &--width {
+      width: 41%;
+    }
+  }
+  &__labelShipper {
+    @include text(2.8vw, 3.8vw);
+    position: absolute;
+    right: 1.5vw;
+    top: 0.5vw;
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .input-row {
+    &__field {
+      height: 37.5px;
+      margin-bottom: 28px;
+      @include text(14px, 16px);
+      padding: 11px 132px 11px 18px;
+      &--shipper {
+        padding: 7px 31px 7px 8px;
+      }
+    }
+    &__label {
+      @include text(12.5px, 15px);
+      letter-spacing: 0.5px;
+    }
+    &__labelShipper {
+      @include text(16px, 21px);
+    }
+  }
+}

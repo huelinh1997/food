@@ -1,0 +1,21 @@
+.card-edit {
+  padding: 15px 0;
+
+  &__title {
+  	color: $yellow-dark;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .card-edit {
+    padding: 0;
+    &__title {
+      @include text(3.4vw, 4vw);
+    }
+    &__text {
+      @include text(2.4vw, 3.1vw);
+    }
+  }
+}

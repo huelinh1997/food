@@ -1,0 +1,20 @@
+.timeserving {
+  display: flex;
+  flex-direction: column;
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-top: 1.7vw;
+    @include text(2.5vw, 3vw);
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .timeserving {
+    &__row {
+      margin-top: 15px;
+      height: 19px;
+      @include text(12px, 15px);
+    }
+  }
+}

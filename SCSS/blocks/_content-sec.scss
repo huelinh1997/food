@@ -1,0 +1,31 @@
+.content-sec {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  &__subtitle {
+    @include text(18px, 18px);
+    color: $green;
+  }
+  &__title {
+  	color: $yellow-dark;
+    letter-spacing: 1.2px;
+  }
+}
+@media only all and (max-width: 575px) {
+  .content-sec {
+    width: 75%;
+    &__subtitle {
+      @include text(12px, 14px);
+      margin-bottom: 4px;
+    }
+    &__title {
+      @include text(15px, 15px);
+      margin-bottom: 5px;
+      letter-spacing: 1.5px;
+    }
+    &__text {
+      @include text(10px, 15px);
+      margin-bottom: 0;
+    }
+  }
+}

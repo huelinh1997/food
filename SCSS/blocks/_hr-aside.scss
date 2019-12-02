@@ -1,0 +1,16 @@
+.hr-aside {
+  height: 2px;
+  display: flex;
+  &__left {
+    width: 50%;
+    height: 100%;
+    background-color: $yellow-dark;
+    display: block;
+  }
+  &__right {
+    width: 50%;
+    height: 100%;
+    background-color: $green;
+    display: block;
+  }
+}

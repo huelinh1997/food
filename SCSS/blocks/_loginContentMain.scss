@@ -1,0 +1,27 @@
+.loginContentMain {
+  margin: 100vw 0 2.8vw;
+  color: $yellow-dark;
+  &__title {
+    @include text(18px, 20px);
+    font-weight: 400;
+  }
+  &__reason {
+    justify-content: space-between;
+    margin: 0;
+  }
+  &__shipper {
+    margin: 15px 0;
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .loginContentMain {
+    padding: 0;
+    margin: 33px auto;
+    &__title {
+      @include text(34px, 37px);
+      letter-spacing: 2px;
+      margin-bottom: 29px;
+    }
+  }
+}

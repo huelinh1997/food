@@ -1,0 +1,50 @@
+.signInShipper {
+  width: 80.4vw;
+  color: $white;
+  letter-spacing: 0.15vw;
+  padding: 6.66vw 6.9vw;
+  background: $green-light;
+  border-radius: 7.4vw;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  top: -8vw;
+  right: -3vw;
+  margin-bottom: -4.5vw;
+  &__wrap {
+    width: 100%;
+  }
+  &__row {
+    @include text(2vw, 2.4vw);
+    display: flex;
+    justify-content: space-between;
+    &--edit {
+      margin: 0 auto 4vw;
+      //width: 85%;
+    }
+  }
+  &__text {
+    @include text(2vw, 2.4vw);
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .signInShipper {
+    width: 477px;
+    padding: 45px 44.5px 45px 42px;
+    border-radius: 25px;
+    right: -18px;
+    top: -48px;
+    margin-bottom: -29px;
+    &__text {
+      @include text(12px, 14px);
+    }
+    &__row {
+      &--edit {
+        margin: 0 auto 22px;
+      }
+    }
+  }
+}

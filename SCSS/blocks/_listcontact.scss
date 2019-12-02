@@ -1,0 +1,22 @@
+.list-contact {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  @include text(14px, 14px);
+  list-style-type: none;
+  li {
+    padding: 0 10px;
+  }
+
+  li:not(:last-child) {
+    border-right: 1px solid $gray-dark;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .list-contact {
+    @include text(9px, 10px);
+    padding: 0;
+    margin-bottom: 5px;
+  }
+}

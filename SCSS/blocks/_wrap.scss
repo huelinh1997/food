@@ -1,0 +1,11 @@
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media only all and (max-width: 575px){
+	.wrap {
+		padding: 0 8%;
+		width: 100%;
+	}
+}

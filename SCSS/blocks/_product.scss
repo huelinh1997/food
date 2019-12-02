@@ -1,0 +1,57 @@
+.product {
+  flex: none;
+  padding: 0;
+  height: 312px;
+  width: 312px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1;
+
+  background-size: cover;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    color: $yellow-dark;
+    position: absolute;
+    @include text(18px, 18px);
+    top: 274px;
+    left: 30px;
+  }
+}
+
+.product::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: $white_transparent;
+}
+
+@media only all and (max-width: 575px) {
+  .product {
+    z-index: -1;
+    height: 41vw;
+    width: 41vw;
+    margin: 2% 0;
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      @include text(2.5vw, 3.15vw);
+      top: 88%;
+      left: 10%;
+    }
+  }
+}

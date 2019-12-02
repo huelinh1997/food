@@ -1,0 +1,9 @@
+.bodyDetail {
+  overflow-x: hidden;
+}
+
+@media only all and (max-width: 575px) {
+  .bodyDetail {
+    overflow-x: unset;
+  }
+}

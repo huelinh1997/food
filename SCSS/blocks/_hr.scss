@@ -1,0 +1,41 @@
+.hr {
+  margin-top: 0px;
+  height: 5px;
+  display: flex;
+  &__gray {
+    background-color: $green;
+    height: 100%;
+    width: 55%;
+    display: block;
+  }
+
+  &__black {
+    background-color: $yellow-dark;
+    height: 100%;
+    width: 45%;
+    display: block;
+    position: relative;
+  }
+
+  &__black::before {
+    width: 11px;
+    background-color: $yellow-dark;
+    height: 5px;
+    left: -10px;
+    content: '';
+    position: absolute;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .hr {
+    height: 0.5vw;
+    &__black::before {
+      width: 2vw;
+      height: 0.5vw;
+      left: -2vw;
+    }
+  }
+}
+

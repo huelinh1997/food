@@ -1,0 +1,35 @@
+.video {
+  padding: 0;
+  p {
+    padding: 150px;
+  }
+  &__play {
+    height: 100%;
+    width: 100%;
+  }
+  &__label {
+    @include text(30px, 34px);
+    padding: 20px;
+    background-color: $white;
+    color: $yellow-dark;
+    box-shadow: 2px 2px 2px $gray-light;  
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translateY(20%);
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .video {
+    &__label {
+      @include text(20px, 20px);
+      padding: 7px 20px;
+      width: 175px;
+      height: 41px;
+      transform: translateY(30%);
+    }
+  }
+}

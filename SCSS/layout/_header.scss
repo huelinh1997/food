@@ -1,0 +1,90 @@
+.header {
+  background: url(../img/header.png);
+  background-size: cover;
+  color: $white;
+  position: relative;
+  overflow-x: hidden;
+  &__nav {
+    padding: 30px 0 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 115px 0 160px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $green;
+    font-size: 45px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 80px;
+  }
+
+  &__right {
+    width: 700px;
+    padding: 0 0 0 65px;
+
+  }
+
+  &__btn a:first-child {
+    margin-right: 8px;
+  }
+
+  &__follow {
+    display: block;
+    padding: 0 0 0px 65px;
+    font-size: 18px;
+  }
+  &__link {
+    margin-left: 15px;
+  }
+  a:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .header {
+    overflow: unset;
+    &__nav {
+      padding: 4% 0 0;
+      flex-wrap: nowrap;
+    }
+
+    &__content {
+      padding:  5% 0 14%;
+      position: relative;
+    }
+
+    &__title {
+      margin-bottom: 2.1%;
+      font-size: 20px;
+    }
+
+    &__text {
+      margin-bottom: 4%;
+      width: 74%;
+      @include text(10px, 12px);
+    }
+
+    &__right {
+      width: 95%;
+      padding-left: 0;
+    }
+
+    &__btn a:first-child {
+      margin-right: 0;
+    }
+
+    &__follow {
+      display: none;
+    }
+
+
+  }
+}

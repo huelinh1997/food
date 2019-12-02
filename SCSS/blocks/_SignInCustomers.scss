@@ -1,0 +1,37 @@
+.SignInCustomers {
+  width: 82.13vw;
+  color: $white;
+  letter-spacing: 0.15vw;
+  padding: 2.66vw 3.2vw;
+  background: $yellow-dark;
+  border-radius: 7.4vw;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 49vw;
+  &__border {
+    width: 100%;
+    padding: 3.5vw 3.2vw;
+    border-radius: 7.4vw;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5vw $white;
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .SignInCustomers {
+    top: 130px;
+    right: 0;
+    width: 480px;
+    padding: 17px 20px;
+    border-radius: 25px;
+    background: $yellow-dark-transparent;
+    &__border {
+      border-width: 2.5px;
+      padding: 10px 22.5px 31px;
+      border-radius: inherit;
+    }
+  }
+}

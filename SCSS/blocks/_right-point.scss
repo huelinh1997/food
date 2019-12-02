@@ -1,0 +1,19 @@
+.right-point {
+  display: none;
+}
+@media only all and (max-width: 575px) {
+  .right-point {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 7vw;
+    margin-bottom: 2.4vw;
+    background: $green;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+    &__text {
+      color: $yellow;
+      @include text(4vw, 5vw);
+      margin: 0 0 0 6.5vw;
+    }
+  }
+}

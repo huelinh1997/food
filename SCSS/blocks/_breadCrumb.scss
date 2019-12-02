@@ -1,0 +1,41 @@
+.breadCrumb {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  &__item {
+    padding-top: 7px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__item.active {
+    padding-left: 7px;
+    color: $yellow-dark;
+  }
+  &__item.active::before{
+    display: inline-block;
+    padding-right: 7px;
+    color: $yellow-dark;
+    content: ">";
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .breadCrumb {
+    font-size: 2vw;
+    &__item {
+      padding-top: 0.5vw;
+    }
+    &__item.active {
+      padding-left: 0.5vw;
+    }
+    &__item.active::before {
+      padding-right: 0.5vw;
+    }
+  }
+
+}

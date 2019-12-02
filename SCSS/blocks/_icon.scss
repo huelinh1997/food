@@ -1,0 +1,22 @@
+.icon {
+  @include circle(25px, 25px);
+  background-color: $yellow-dark;
+  &--gray {
+    background-color: $gray-light2;
+  }
+  &--m {
+    margin: 0 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .icon {
+    @include circle(25px, 25px);
+    &--m {
+      font-size: 16px;
+    }
+  }
+}

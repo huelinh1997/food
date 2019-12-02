@@ -1,0 +1,44 @@
+.rectangle {
+  width: 65vw;
+  height: 70vw;
+  opacity: 0.85;
+  border: 6vw solid $yellow-dark;
+  border-bottom: 3.5vw solid $yellow-dark;
+  background: transparent;
+  transform: rotate(35deg);
+  position: absolute;
+  top: -69vw;
+  right: -52vw;
+  &__inside {
+    width: 65vw;
+    height: 70vw;
+    border: 3.5vw solid $green;
+    border-bottom: 6vw solid $green;
+    position: absolute;
+    left: 1vw;
+    bottom: 1vw;
+  }
+}
+
+@media only all and (min-width: 960px) {
+  .rectangle{
+    top: 0;
+    left: 550px;
+    width: 1500px;
+    height: 600px;
+    border-width: 61px;
+    border-bottom-width: 36px;
+    border-right: 0;
+    border-top: 0;
+    &__inside {
+      left: 10px;
+      bottom: 10px;
+      width: 1500px;
+      height: 706px;
+      border-width: 36px;
+      border-bottom-width: 61px;
+      border-right: 0;
+      border-top: 0;
+    }
+  }
+}

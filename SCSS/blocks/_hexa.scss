@@ -1,0 +1,88 @@
+//.hexagon {
+//  position: relative;
+//  @extend %hexagon;
+//  background-image: url(../img/hexa111.png);
+//  background-size: auto 230.9401px;
+//  z-index: -1;
+//  &--2 {
+//    background-image: url(../img/hexa2.jpg);
+//    background-size: auto 219.3931px;
+//    border-left: solid 5px #00be20;
+//    border-right: solid 5px #00be20;
+//  }
+//}
+//
+//.hexTop,
+//.hexBottom {
+//  @extend %hex-top-bottom;
+//  left: 29.29px;
+//  &--2 {
+//    left: 24.29px;
+//  }
+//}
+//
+///*counter transform the bg image on the caps*/
+//.hexTop:after,
+//.hexBottom:after {
+//  @extend %hex-top-bottom-after;
+//  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+//  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+//  transform:          rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+//  width: 200.0000px;
+//  height: 115.47005383792516px;
+//}
+//
+//.hexTop--2:after, .hexBottom--2:after {
+//  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+//  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+//  transform:          rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+//  width: 190.0000px;
+//  height: 109.69655114602891px;
+//}
+//
+//.hexTop {
+//  top: -70.7107px;
+//  &--2 {
+//    border-top: solid 7.0711px #00be20;
+//    border-right: solid 7.0711px #00be20;
+//  }
+//}
+//
+//.hexTop:after  {
+//  background-position: center top;
+//}
+//
+//.hexBottom {
+//  bottom: -70.7107px;
+//  &--2 {
+//    border-bottom: solid 7.0711px #00be20;
+//    border-left: solid 7.0711px #00be20;
+//  }
+//}
+//
+//.hexBottom:after {
+//  background-position: center bottom;
+//}
+//
+//.hexagon:after {
+//  @extend %hexagon-after;
+//  top: 0.0000px;
+//  left: 0;
+//  width: 200.0000px;
+//  height: 115.4701px;
+//}
+//
+//.hexagon--2:after {
+//    top: 2.8868px;
+//    left: 0;
+//    width: 190.0000px;
+//    height: 109.6966px;
+//}
+
+@media only all and (max-width: 575px) {
+  .hexagon {
+    &--2 {
+      display: none;
+    }
+  }
+}

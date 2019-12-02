@@ -1,0 +1,41 @@
+.hexagon {
+  position: relative;
+  &__wrap, &__border {
+    width: 200px;
+    height: 230px;
+    background: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  &__wrap--2 {
+    background-image: url(../img/hexa111.png);
+    background-size: cover;
+  }
+
+  &__border {
+    width: 96%;
+    height: 96%;
+    background-image: url(../img/hexa2.jpg);
+    background-size: cover;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .hexagon {
+    position: absolute;
+    top: 2.5vw;
+    z-index: -1;
+    &--1 {
+      display: none;
+    }
+    &__wrap {
+      width: 24.2vw;
+      height: 28vw;
+    }
+
+  }
+}

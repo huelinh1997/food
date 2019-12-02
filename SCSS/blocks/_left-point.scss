@@ -1,0 +1,19 @@
+.left-point {
+  display: none;
+}
+@media only all and (max-width: 575px) {
+  .left-point {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 7vw;
+    margin-bottom: 2.4vw;
+    background: $green;
+    clip-path: polygon(20% 0%, 100% 1%, 100% 100%, 20% 100%, 0% 50%);
+    &__text {
+      color: $yellow;
+      @include text(4vw, 5vw);
+      margin: 0 0 0 12vw;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.mainDetail {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  &__aside {
+    width: 30%;
+  }
+  &__article {
+    width: 68%;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .mainDetail {
+    flex-direction: column;
+    &__article {
+      width: 100%;
+    }
+    &__aside {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.sec2 {
+  margin: 100px 0 60px;
+  background-color: $yellow-transparent;
+  background-image: url(../img/chicken.png);
+  background-repeat: no-repeat;
+  background-position-x: 65vw;
+  background-size: contain;
+  position: relative;
+  position: relative;
+  &__wrap {
+    padding: 0;
+    width: 480px;
+  }
+  &__title {
+    padding: 90px 0 30px;
+    margin: 0;
+    @include text(40px, 40px);
+    color: $green;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 70px;
+  }
+
+  &__btn {
+    padding-bottom: 70px;
+    a:first-child {
+      margin-right: 0.5vw;
+    }
+  }
+
+  &__img1 {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 64%;
+  }
+
+  &__img2 {
+    max-height: 125%;
+    position: absolute;
+    top: -12%;
+    left: 52%;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .sec2 {
+    margin: 5% 0 0;
+    background-color: unset;
+    background-size: cover;
+    background-position: unset;
+    &__img1 {
+      display: none;
+    }
+
+    &__img2 {
+      width: 18vw;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 74%;
+    }
+
+    &__wrap {
+      width: 61vw;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__title {
+      @include text(24px, 27px);
+      padding: 18% 0 4%;
+    }
+
+    &__text {
+      @include text(9px, 13px);
+      padding-bottom: 8%;
+    }
+
+    &__btn {
+      padding-bottom: 15%;
+
+    }
+  }
+  .sec2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.87;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.96) 42%, #ffffff);
+  }
+}

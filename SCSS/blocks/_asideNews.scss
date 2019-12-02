@@ -1,0 +1,52 @@
+.asideNews {
+  overflow: hidden;
+  &__inner {
+    height: 400px;
+    overflow: auto;
+    margin: 10px -300px 0 0;
+    padding-right: 300px;
+  }
+  &__title {
+    @include text(18px, 20px);
+    color: $yellow-dark;
+    margin-bottom: 10px;
+  }
+  &__item {
+    display: flex;
+    margin-top: 10px;
+  }
+  &__pic {
+    width: 40px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  &__right {
+    margin-left: 10px;
+    @include text(12px, 15px);
+  }
+  &__des {
+    @include text(12px, 15px);
+    margin-bottom: 12px;
+    display: block;
+    color: inherit;
+    font-weight: bold;
+  }
+  &__detail {
+    display: flex;
+    color: #a29a9a;
+    i {
+      margin-right: 4px;
+    }
+  }
+  &__icon {
+    color: $yellow-dark;
+  }
+}
+@media only all and (max-width: 575px) {
+  .asideNews {
+    &__title {
+      @include text(12px, 14px);
+    }
+  }
+}

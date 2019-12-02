@@ -1,0 +1,45 @@
+.loginForm {
+  margin-bottom: -20vw;
+  &__border {
+    width: 70.5vw;
+    position: relative;
+    left: 0;
+    top: -24vw;
+    border-radius: 7.4vw;
+    border: solid 0.5vw $yellow-dark;
+  }
+  &__text {
+    flex-direction: column;
+  }
+  &__title {
+    @include text(3.6vw, 5.3vw);
+    margin-bottom: 1.5vw;
+  }
+  &__script {
+    @include text(2.9vw, 4vw);
+    margin-bottom: 4.3vw;
+  }
+}
+
+@media only all and (min-width: 960px)  {
+  .loginForm {
+    height: 0;
+    margin-bottom: 9vw;//10vw;
+    &__border {
+      width: 452px;
+      border-width: 4px;
+      border-radius: 25px;
+      top: -735px;
+      left: -21px;
+    }
+    &__title {
+      @include text(21px, 27.5px);
+      margin-bottom: 11.5px;
+      letter-spacing: 1px;
+    }
+    &__script {
+      @include text(13px, 17px);
+      margin-bottom: 30px;
+    }
+  }
+}

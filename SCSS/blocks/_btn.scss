@@ -1,0 +1,63 @@
+
+.btn {
+  &--noneyellow {
+    @extend %btn;
+    border: 2px solid $yellow-dark;
+    color: $yellow-dark;
+  }
+
+  &--width {
+    width: 150px;
+  }
+
+  &--noneyellow:hover {
+    background-color: $yellow-dark;
+    color:  $white;
+  }
+
+  &--submit {
+    border: none;
+    width: 18.5%;
+    height: auto;
+    padding: 0.9vw 1.8vw;
+    border-radius: 7.4vw;
+    box-shadow: 0 1.5px 3px 0 $green;
+    background: $green;
+    @include text(3.2vw, 4vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw 0 0 auto;
+  }
+  &--yellow {
+    background: $yellow-dark;
+  }
+}
+
+@media only all and (max-width: 575px) {
+	.btn {
+		&--noneyellow {
+          @include text(6px, 8px);
+          padding: 2px 5px;
+          border: 1px solid $yellow-dark;
+        }
+        &--width {
+          width: 56px;
+        }
+        &--width2 {
+          font-size: 7px;
+          width: 71px;
+          height: 18px;
+          padding: 4px 5px;
+        }
+	}
+}
+
+@media only all and (min-width: 960px) {
+  .btn {
+    &--submit {
+      @include text(18px, 22px);
+      padding: 6px 15px;
+    }
+  }
+}

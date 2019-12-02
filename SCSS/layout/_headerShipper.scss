@@ -1,0 +1,25 @@
+.headerShipper {
+  color: $white ;
+  background-image: url(../img/shipperr.jpg);
+  background-size: cover;
+  height: 79vw;
+  position: relative;
+  &__wrap {
+    position: relative;
+  }
+
+}
+.headerShipper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: $white-linear;
+}
+@media only all and (min-width: 960px) {
+  .headerShipper {
+    height: 948px;
+  }
+}

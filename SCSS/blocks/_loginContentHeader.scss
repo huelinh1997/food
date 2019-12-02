@@ -1,0 +1,32 @@
+.loginContentHeader {
+    display: none;
+}
+
+@media only all and (min-width: 960px) {
+  .loginContentHeader {
+      display: block;
+      width: 420px;
+      padding-top: 425px;
+      &--shipper {
+        justify-content: flex-end;
+        margin-left: auto;
+        color: $black-gray;
+        text-align: right;
+        padding-top: 460px;
+      }
+
+    &__title {
+      @include text(31px, 35px);
+      letter-spacing: 2px;
+      margin-bottom: 37px;
+      &--shipper {
+        width: 390px;
+        margin: 0 0 10px -57px;
+      }
+    }
+    &__text{
+      @include text(19px, 30px);
+      letter-spacing: 1.2px;
+    }
+  }
+}

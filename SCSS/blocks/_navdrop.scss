@@ -1,0 +1,21 @@
+.nav-dropdown {
+  display: flex;
+  align-items: center;
+  &__text {
+      color: $yellow-dark;
+      margin-right: 10px;
+  }
+  &__btn {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+  }
+}
+
+@media only all and (max-width: 575px){
+  .nav-dropdown {
+    &__text{
+      display: none;
+    }
+  }
+}

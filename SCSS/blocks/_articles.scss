@@ -1,0 +1,26 @@
+.articles {
+  &__title {
+    @include text(20px, 24px);
+  }
+  &__pic {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
+
+@media only all and (max-width: 575px) {
+  .articles {
+    margin: 12px 0;
+    &__title {
+      @include text(14px, 16px);
+    }
+    &__pic {
+      width: 100%;
+      margin: 0 auto 8px;
+    }
+    &__text {
+      @include text(10px, 12px);
+      margin-bottom: 10px;
+    }
+  }
+}

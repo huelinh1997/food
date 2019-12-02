@@ -1,0 +1,85 @@
+.menu {
+  color: $white;
+  z-index: 1;
+  width: 28%;
+  height: 100%;
+  background-color: $yellow-dark;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px 35px;
+  animation-name: menuSlide;
+  animation-duration: 1s;
+  a:hover {
+    color: $yellow;
+  }
+  &__detail {
+    height: 750px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    @include text(18px, 20px);
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  &__wrap {
+    padding: 0;
+  }
+  &__item {
+    @include text(18px, 22px);
+    font-weight: bold;
+    margin-bottom: 34px;
+    list-style-type: none;
+  }
+  &__paragraph {
+    @include text(15px, 20px);
+    margin-top: 80px;
+    font-weight: normal;
+  }
+  &__link a:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@keyframes menuSlide {
+  0%   {right:-28%; top:0px;}
+  100% {right:0; top:0px;}
+}
+
+@media only all and (max-width: 575px) {
+  .menu {
+    width: 70%;
+    height: auto;
+    z-index: 1;
+    padding: 35px 30px 25px;
+    &__title {
+      @include text(13px, 15px);
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    &__item {
+      @include text(13px, 12px);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      @include text(8px, 10px);
+      margin: 60px 0 10px;
+      font-weight: normal;
+    }
+    &__link {
+      font-size: 10px;
+    }
+  }
+  @keyframes menuSlide {
+    0%   {right:-70%; top:0px;}
+    100% {right:0; top:0px;}
+  }
+  @keyframes menuSlide {
+    0%   {right:0; top:0px;}
+    100% {right:-70%; top:0px;}
+  }
+}

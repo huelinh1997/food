@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #6E6E6E;
+}
+a {
+  color: $white;
+}
+a:hover {
+  text-decoration: none;
+  color: $yellow-dark;
+  transition: 0.5s;
+}

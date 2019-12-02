@@ -1,0 +1,18 @@
+.hexagon-border {
+  display: none;
+}
+
+@media only all and (max-width: 575px) {
+  .hexagon-border {
+    position: absolute;
+    left: 1.1vw;
+    display:block;
+    width:24.2vw;
+    height: 28vw;
+    &__polygon {
+      fill: transparent;
+      stroke: $green;
+      stroke-width: 1;
+    }
+  }
+}
